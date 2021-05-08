@@ -1,0 +1,27 @@
+{
+  "name": "element-rendering-webpack-plugin",
+  "version": "1.0.2",
+  "description": "",
+  "main": "./dist/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nextdoorUncleLiu/element-rendering-webpack-plugin.git"
+  },
+  "author": "xichen liu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nextdoorUncleLiu/element-rendering-webpack-plugin/issues"
+  },
+  "homepage": "https://github.com/nextdoorUncleLiu/element-rendering-webpack-plugin#readme",
+  "devDependencies": {
+    "@babel/core": "^7.14.0",
+    "@babel/preset-env": "^7.14.1",
+    "@babel/preset-react": "^7.13.13",
+    "babel-loader": "^8.2.2",
+    "webpack": "^5.36.2",
+    "webpack-cli": "^4.7.0"
+  }
+}
