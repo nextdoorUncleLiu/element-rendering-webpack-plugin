@@ -1,5 +1,8 @@
+const ElementRenderingWebpackPlugin = require('../src/index.js')
+// const MyPlugin = require('./main.js')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 module.exports = {
-  mode: 'production',
+  mode: 'development',
   entry: './src/index.js',
   output: {
     filename: '[name].js',
@@ -23,4 +26,10 @@ module.exports = {
       }
     ]
   },
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: './public/index.html'
+    }),
+    new ElementRenderingWebpackPlugin()
+  ]
 }
