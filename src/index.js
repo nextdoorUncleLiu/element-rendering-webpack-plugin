@@ -3,9 +3,12 @@ class MyPlugin {
     compiler.hooks.thisCompilation.tap('MyPlugin', (compilation) => {
       // console.log('thisCompilation 初始化 compilation 时调用，在触发 compilation 事件之前调用')
       compilation.hooks.buildModule.tap('SourceMapDevToolModuleOptionsPlugin', module => {
+        if (/\.(jpe?g|png)$/.test(module.rawRequest)) {
+          return
+        }
         if (module.loaders) {
           module.loaders.push({
-            loader: 'element-rendering-webpack-loader'
+            loader: __dirname + '/element-rendering-webpack-loader.js'
           })
         }
       })

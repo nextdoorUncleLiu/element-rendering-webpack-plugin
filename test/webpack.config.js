@@ -26,6 +26,11 @@ module.exports = {
       }
     ]
   },
+  resolve: {
+    alias: {
+      '@': __dirname
+    }
+  },
   plugins: [
     new HtmlWebpackPlugin({
       template: './public/index.html'

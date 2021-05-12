@@ -2,6 +2,7 @@ import React from 'react'
 import { render } from 'react-dom'
 import Asd from './child';
 // Asd();
+// console.log('@')
 
 console.log(1);
 console.log(2);
